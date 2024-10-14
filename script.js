@@ -14,8 +14,8 @@ function addTask() {
   const listItem = document.createElement("li");
   listItem.textContent = taskText;
   const removeButton = document.createElement("button");
-  removeButton.textContent = "remove";
-  removeButton.className = "remove-btn";
+  removeButton.textContent = "Remove";
+  removeButton.classList.add("remove-btn");
 
   removeButton.addEventListener("click", function () {
     taskList.removeChild(listItem);
